@@ -1,0 +1,232 @@
+.navbar {
+    display: flex;
+    top: 30px;
+    left: 10px;
+    right: 10px;
+    height: 55px;;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.33);
+    color: #fff;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+}
+
+.center img {
+    max-width: 100%;
+    height: 55px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero video {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+        position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.hero .content {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    z-index: 1;
+}
+
+.hero .content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "righteous", cursive;
+}
+
+.hero .content h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.hero .content p {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 35px;
+}
+
+.hero .content p1 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.project-card {
+    display: flex;
+    border-radius: 40px;
+    overflow: hidden;
+    margin: 60px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items:center;
+    background-color: rgba(198, 221, 244, 0.5) ;
+}
+
+.project-image img {
+    height: auto;
+    max-width: 100%;
+    min-width: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.project-description {
+    flex: 1;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-description h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Righteous", cursive;
+    font-size: 30px;
+}
+
+.project-description p {
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.project-tags {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    
+}
+
+.project-tags span {
+    background-color: #3BA4C1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.project-button {
+    text-decoration: none;
+    background-color: rgba(59, 164, 193, 0.5);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    align-self: flex-start;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.33);
+}
+
+.project-button:hover {
+    background-color: rgba(59, 164, 193, 1);
+}
+
+.floating-button {
+    position:sticky;   
+    bottom: 8%;       
+    left: 93%;         
+    z-index: 1000;     
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 50%; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    text-decoration: none; 
+    font-size: 35px;       
+    color: #333;           
+    transition: transform 0.3s; 
+}
+
+.floating-button:hover {
+    transform: scale(1.1); 
+}
+
+
+
+.footer {
+   
+    background: linear-gradient(to bottom, #3177AB, #D1AAAF);
+    color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-content {
+    text-align: left;
+    font-size: 25px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 30px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-link:hover {
+    text-decoration: underline; 
+}
