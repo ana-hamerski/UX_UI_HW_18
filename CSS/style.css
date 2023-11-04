@@ -160,45 +160,102 @@
     line-height: 1.4;
   }
   
-
-
 /* end of my Design Essence session */
+
 
 .Portfolio h1 {
     text-align: center;
-    padding-bottom: 0px;
+    margin-bottom: 40px;
     font-family: "Righteous", cursive;
     font-style:normal;
     font-size: 40px;
 }
 
-.project-card {
-    display: flex;
+.Portfolio {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+
+}
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 25%;
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
+
+    /* display: flex;
     border-radius: 40px;
     overflow: hidden;
     margin: 60px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     align-items:center;
     padding: 20px;
-    background-color: rgba(198, 221, 244, 0.2) ;
-}
+    background-color: rgba(198, 221, 244, 0.2) ; */
+
+    .workGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
+        grid-template-areas: 
+                        "travel"
+                        "AR"
+                        "NTCR";
+        grid-gap: 20px;
+        padding: 20px;
+    }
+    
+    .travel-card, .AR-card, .NTCR-card {
+        border-radius: 30px;
+        display: grid;
+        grid-template-rows: auto;
+        overflow: hidden;
+        padding: 20px;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .travel-card {
+        grid-area: travel;
+        background-color: rgba(59, 164, 193, 0.1);
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "project-description project-image";
+    }
+    
+    .AR-card {
+        grid-area: AR;
+        background-color: rgba(152, 102, 194, 0.05);
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "project-image project-description";
+    }
+    
+    .NTCR-card {
+        grid-area: NTCR;
+        background-color: rgba(244, 137, 145, 0.1);
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "project-description project-image";
+    }
+    
+
+    .project-image {
+        grid-area: project-image;
+    }
 
 .project-image img {
     max-height: 400px;
     max-width: 100%;
-    min-width: 200px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 40px;
+    height: auto;
+    display: block;
 }
 
 
 .project-description {
-    flex: 1;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    grid-area: project-description;
+    padding: 20px;
 }
 
 .project-description h2 {
@@ -224,10 +281,24 @@
 }
 
 .project-tags span {
-    background-color: #3BA4C1;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 13px;
+}
+
+.travel-card .project-tags span {
+    background-color: rgba(59, 164, 193, 0.2);
+    color: #3BA4C1;
+}
+
+.AR-card .project-tags span {
+    background-color: rgba(152, 102, 194, 0.15);
+    color: #6454BB;
+}
+
+.NTCR-card .project-tags span {
+    background-color: rgba(244, 137, 145, 0.15);
+    color: #FEACA9;
 }
 
 .project-button {
@@ -257,7 +328,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
     text-align: center;
     text-decoration: none; 
-    font-size: 35px;       
+    font-size: 25px;       
     color: #333;           
     transition: transform 0.3s; 
 }
